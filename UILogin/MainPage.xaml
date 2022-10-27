@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:UILogin.CustomRender"
+             x:Class="UILogin.MainPage">
+
+    <StackLayout Padding="0" BackgroundColor="DarkGray">
+ 
+    <Grid>
+        <StackLayout Padding="0" Margin="0">
+        <Frame BackgroundColor="LightGray" HeightRequest="150" HorizontalOptions="FillAndExpand">
+                    <Image Source="https://cdn.pixabay.com/photo/2022/10/24/17/50/mountains-7544027_960_720.jpg" Aspect="AspectFill" Margin="0"/>
+                       
+                </Frame>
+                           
+        </StackLayout>
+        <StackLayout Margin="15,110,15,0">
+        <Frame BackgroundColor="White" HasShadow="True" HeightRequest="450" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+
+                                    </Frame>
+                                    <local:CustomEntry Placeholder="Email" TextColor="LightGray" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+
+                                    </Frame>
+
+                                    <local:CustomEntry Placeholder="Password" IsPassword="True" TextColor="LightGray" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+
+                            <CheckBox IsChecked="False" Color="LightGray" Grid.Column="0" HorizontalOptions="End"/>
+                            <Label Text="Remember me" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Medium" />
+                            <Label Text="Forgot Password" TextColor="LightGray"  HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+
+                        </StackLayout>
+                        <Button Text="SIGN IN" BackgroundColor="DarkGray" TextColor="White" FontAttributes="Bold" CornerRadius="30"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                            <Label Text="Still Not Connected ?" HorizontalTextAlignment="Start"  VerticalTextAlignment="Center" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                            <Label Text="Sign Up" TextColor="LightBlue" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium" />
+
+                        </StackLayout>
+
+                        <StackLayout>
+
+                            <Grid>
+                                <BoxView BackgroundColor="DarkGray" HeightRequest="5" Margin="50" HorizontalOptions="FillAndExpand" WidthRequest="130" />
+                                <Frame BackgroundColor="White" WidthRequest="50" Padding="0" HeightRequest="50" CornerRadius="30"  HasShadow="False" VerticalOptions="Center" BorderColor="DarkGray" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="OR" TextColor="DarkGray" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                                </Frame>
+                            </Grid>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Frame BackgroundColor="#F7F7F7" WidthRequest="50" Padding="0" HeightRequest="50" CornerRadius="30"  HasShadow="False" BorderColor="DarkGray">
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/124/124010.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Frame BackgroundColor="#1877F2" WidthRequest="50" Padding="0" HeightRequest="50" CornerRadius="30"  HasShadow="False" BorderColor="DarkGray">
+                                    <Image Source="https://static.vecteezy.com/system/resources/previews/002/534/045/original/social-media-twitter-logo-blue-isolated-free-vector.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                            </StackLayout>
+                            
+
+                        </StackLayout>
+                        
+                    </StackLayout>
+                </Frame>  
+                
+        </StackLayout>
+
+    </Grid>
+        
+    </StackLayout>
+
+</ContentPage>

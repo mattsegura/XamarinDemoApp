@@ -1,0 +1,1 @@
+C:\Users\Infinitaz\Desktop\XamarinDemoApp\UILogin.UWP\UILogin.UWP.csproj;x86
